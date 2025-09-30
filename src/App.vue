@@ -15,10 +15,9 @@ import Navigation from "./components/Navigation.vue";
       <About />
       <Skills />
       <Projects />
-      <Contact />
     </main>
     <footer class="footer">
-      <p>&copy; 2025 김개발 Portfolio. All rights reserved.</p>
+      <p>&copy; 2025 이하영 Portfolio. All rights reserved.</p>
     </footer>
   </div>
 </template>

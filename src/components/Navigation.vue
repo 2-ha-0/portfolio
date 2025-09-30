@@ -2,7 +2,7 @@
   <nav class="navigation" :class="{ scrolled: isScrolled }">
     <div class="nav-container">
       <div class="nav-logo">
-        <a href="#hero">김개발</a>
+        <a href="#hero">이하영</a>
       </div>
       <div class="nav-menu" :class="{ active: isMenuOpen }">
         <a href="#about" @click="closeMenu">About</a>

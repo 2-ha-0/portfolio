@@ -1,70 +1,161 @@
 <template>
   <section id="skills" class="skills">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">보유 기술과 숙련도</p>
+      </div>
+
+      <div class="skills-container">
         <div class="skill-category">
-          <h3 class="category-title">Frontend</h3>
-          <div class="skill-items">
-            <div
-              class="skill-item"
-              v-for="skill in frontendSkills"
-              :key="skill.name"
-            >
-              <div class="skill-info">
-                <span class="skill-name">{{ skill.name }}</span>
-                <span class="skill-percentage">{{ skill.level }}%</span>
-              </div>
+          <div class="category-header">
+            <div class="category-icon">🎨</div>
+            <h3 class="category-title">Frontend</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Vue.js</span>
               <div class="skill-bar">
-                <div
-                  class="skill-progress"
-                  :style="{ width: skill.level + '%' }"
-                ></div>
+                <div class="skill-progress" style="width: 95%"></div>
               </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 98%"></div>
+              </div>
+              <span class="skill-percentage">98%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS/SCSS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML5</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+              <span class="skill-percentage">95%</span>
             </div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="category-title">Backend</h3>
-          <div class="skill-items">
-            <div
-              class="skill-item"
-              v-for="skill in backendSkills"
-              :key="skill.name"
-            >
-              <div class="skill-info">
-                <span class="skill-name">{{ skill.name }}</span>
-                <span class="skill-percentage">{{ skill.level }}%</span>
-              </div>
+          <div class="category-header">
+            <div class="category-icon">⚙️</div>
+            <h3 class="category-title">Backend</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
               <div class="skill-bar">
-                <div
-                  class="skill-progress"
-                  :style="{ width: skill.level + '%' }"
-                ></div>
+                <div class="skill-progress" style="width: 90%"></div>
               </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Express</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">REST API</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+              <span class="skill-percentage">92%</span>
             </div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="category-title">Tools & Others</h3>
-          <div class="skill-items">
-            <div
-              class="skill-item"
-              v-for="skill in toolSkills"
-              :key="skill.name"
-            >
-              <div class="skill-info">
-                <span class="skill-name">{{ skill.name }}</span>
-                <span class="skill-percentage">{{ skill.level }}%</span>
-              </div>
+          <div class="category-header">
+            <div class="category-icon">🛠️</div>
+            <h3 class="category-title">Tools & Others</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Git</span>
               <div class="skill-bar">
-                <div
-                  class="skill-progress"
-                  :style="{ width: skill.level + '%' }"
-                ></div>
+                <div class="skill-progress" style="width: 95%"></div>
               </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">AWS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 65%"></div>
+              </div>
+              <span class="skill-percentage">65%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 98%"></div>
+              </div>
+              <span class="skill-percentage">98%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Linux</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+              <span class="skill-percentage">75%</span>
             </div>
           </div>
         </div>
@@ -76,38 +167,50 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const frontendSkills = ref([
-  { name: "Vue.js", level: 90 },
-  { name: "React", level: 85 },
-  { name: "TypeScript", level: 80 },
-  { name: "JavaScript", level: 95 },
-  { name: "CSS/SCSS", level: 88 },
-  { name: "HTML5", level: 92 },
-]);
-
-const backendSkills = ref([
-  { name: "Node.js", level: 85 },
-  { name: "Express", level: 80 },
-  { name: "Python", level: 75 },
-  { name: "MongoDB", level: 78 },
-  { name: "PostgreSQL", level: 70 },
-  { name: "REST API", level: 88 },
-]);
-
-const toolSkills = ref([
-  { name: "Git", level: 90 },
-  { name: "Docker", level: 65 },
-  { name: "AWS", level: 60 },
-  { name: "Figma", level: 75 },
-  { name: "VS Code", level: 95 },
-  { name: "Linux", level: 70 },
+const skillCategories = ref([
+  {
+    name: "Frontend",
+    icon: "🎨",
+    skills: [
+      { name: "Vue.js", level: 95 },
+      { name: "React", level: 90 },
+      { name: "TypeScript", level: 85 },
+      { name: "JavaScript", level: 98 },
+      { name: "CSS/SCSS", level: 92 },
+      { name: "HTML5", level: 95 },
+    ],
+  },
+  {
+    name: "Backend",
+    icon: "⚙️",
+    skills: [
+      { name: "Node.js", level: 90 },
+      { name: "Express", level: 88 },
+      { name: "Python", level: 80 },
+      { name: "MongoDB", level: 85 },
+      { name: "PostgreSQL", level: 75 },
+      { name: "REST API", level: 92 },
+    ],
+  },
+  {
+    name: "Tools & Others",
+    icon: "🛠️",
+    skills: [
+      { name: "Git", level: 95 },
+      { name: "Docker", level: 70 },
+      { name: "AWS", level: 65 },
+      { name: "Figma", level: 80 },
+      { name: "VS Code", level: 98 },
+      { name: "Linux", level: 75 },
+    ],
+  },
 ]);
 </script>
 
 <style scoped>
 .skills {
-  padding: 5rem 0;
-  background-color: white;
+  padding: 6rem 0;
+  background: white;
 }
 
 .container {
@@ -116,11 +219,15 @@ const toolSkills = ref([
   padding: 0 2rem;
 }
 
-.section-title {
+.section-header {
   text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: #333;
   position: relative;
 }
@@ -137,77 +244,149 @@ const toolSkills = ref([
   border-radius: 2px;
 }
 
-.skills-grid {
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .skill-category {
   background: #f8f9fa;
-  padding: 2rem;
   border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.category-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 1.5rem;
-  color: #333;
-  text-align: center;
 }
 
-.skill-items {
+.category-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.skill-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .skill-item {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.skill-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-name {
-  font-weight: 500;
-  color: #333;
-}
-
-.skill-percentage {
+  font-size: 0.9rem;
   font-weight: 600;
-  color: #667eea;
+  color: #374151;
+  min-width: 80px;
 }
 
 .skill-bar {
+  flex: 1;
   height: 8px;
-  background-color: #e0e0e0;
-  border-radius: 4px;
+  background: #e5e7eb;
+  border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 
 .skill-progress {
   height: 100%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 4px;
-  transition: width 1s ease-in-out;
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+  position: relative;
+}
+
+.skill-progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skill-percentage {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #667eea;
+  min-width: 35px;
+  text-align: right;
 }
 
 @media (max-width: 768px) {
-  .skills-grid {
+  .skills-container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .skill-category {
-    padding: 1.5rem;
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 }
 </style>
